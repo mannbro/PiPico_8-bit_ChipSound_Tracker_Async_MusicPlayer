@@ -149,10 +149,14 @@ A-401 C#401 E-401 A-416 D--16
 """
 
 # Create a PWMTracker instance with default melodic pins (12,13,14,15), drum pin 11, and BPM of 60
-tracker = PWMTracker(bpm=60)
+tracker = PWMTracker(pin1=12, pin2=13, pin3=14, pin4=15, pin_drum=11, bpm=60)
 
 #Play the pattern asynchronously on core two in a continuous loop
 tracker.play_pattern(pattern, async_play=True, loop=True)
+
+#To play synchronously and without looping, you would use the following instead:
+#tracker.play_pattern(pattern, async_play=False, loop=False)
+
 
 #Ok, we don't want to go crazy, so set a timer for 5 minutes
 time.sleep(300)
@@ -160,3 +164,4 @@ time.sleep(300)
 #Stop the tracker
 tracker.stop()
 print("Asynchronous playback stopped.")
+
