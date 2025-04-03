@@ -29,6 +29,8 @@ The - terminal of the speaker is connected to ground.
 
 Optionally, you can add a 0.1 µF or so capacitor in parallell with the speaker as a low pass filter, but I didn't deem it necessary for my simple wiring example.
 
+![My Photo](breadboard_wiring.jpeg)
+
 ## Pattern format
 The format of the notation is inspired by the trackers like sound trackers on the Amiga.
 
