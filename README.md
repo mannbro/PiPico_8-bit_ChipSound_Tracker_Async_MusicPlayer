@@ -1,10 +1,10 @@
-# Raspberry Pi Pico Async Music Player (8-bit ChipSound Tracker)
+# Raspberry Pi Pico Multitasking Music Player (8-bit ChipSound Tracker)
 
 This is the perfect music player library for retro games etc on the Raspberry Pi Pico.
 
 It has four sound channels that can produce square waves using PWM (Pulse Width Modulation) plus a percussion channel that produce 8-bit Nintendo NES inspired drums using the built in state machines and PIO.
 
-It can play asyncronously in the background using the second core, or syncronously.
+It can play asyncronously in the background, in a separate thread using the second core, or you can play it syncronously.
 
 Asyncronous play is great for playing music during gameplay, and syncronous is great for when you want to play during a Game Over screen or something, where you want to play a tune and then exit the screen when the music stops.
 
