@@ -29,6 +29,8 @@ The - terminal of the speaker is connected to ground.
 
 Optionally, you can add a 0.1 µF or so capacitor in parallell with the speaker as a low pass filter, but I didn't deem it necessary for my simple wiring example.
 
+![My Photo](breadboard_wiring.jpeg)
+
 ## Pattern format
 The format of the notation is inspired by the trackers like sound trackers on the Amiga.
 
@@ -64,3 +66,8 @@ The percussion channels look similar but works a bit differently.
 - Character 2: N/A (always -)
 - Character 3: N/A (always -)
 - Character 4-5: The the fraction part of the length of the drum. Whole note (1/1) = 01, half note (1/2) = 02, quarter note (1/4) = 04, eigth note (1/8) = 08 and 16th note (1/16) = 16.
+
+## Example implementation
+The example.py has an example implementation that shows how you can create a pattern (the included pattern plays some chords and arpeggios accompanied by a simple drum pattern) and play it both asynchronously and synchronously and with and without looping.
+
+Just add the "PWMTracker.py" to your pico and you can run the example.py from within Thonny.
