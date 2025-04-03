@@ -9,11 +9,11 @@ It can play asyncronously in the background, in a separate thread using the seco
 Asyncronous play is great for playing music during gameplay, and syncronous is great for when you want to play during a Game Over screen or something, where you want to play a tune and then exit the screen when the music stops.
 
 ## Background
-I grew up in the 80:s. and surrounded by the distinct 8-bit sounds of The NES and the incredible SID chip in thhe C-64.
+I grew up in the 80:s. and surrounded by the distinct 8-bit sounds of The NES and the incredible SID chip that powered the C-64.
 
 When I later got an Amiga, I started making music in trackers like "Sound Tracker" and "Noise Tracker.
 
-This is what inspired me to make a music player for the Pi Pico, reproducing the simple squarewaves and noise percussions using a pattern format inspired by the Amiga trackers.
+This is what inspired me to make a music player for the Pi Pico, reproducing the simple squarewaves and noise percussions from the 8-bit era using a pattern format inspired by the trackers on the Amiga.
 
 ## How it works
 Each channel uses it's own pin to generate the sound, and they are then mixed together using simple resistors and wired to a speaker.
