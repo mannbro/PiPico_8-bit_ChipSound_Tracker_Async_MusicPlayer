@@ -29,6 +29,8 @@ The - terminal of the speaker is connected to ground.
 
 Optionally, you can add a 0.1 µF or so capacitor in parallell with the speaker as a low pass filter, but I didn't deem it necessary for my simple wiring example.
 
+Obviously, for serious implementations, you will probably want to impedance match properly and use an amplifier for the sound instead of using this simple (but surprisingly well working) hacky wiring.
+
 ![My Photo](breadboard_wiring.jpeg)
 
 ## Pattern format
